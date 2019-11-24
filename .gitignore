@@ -54,3 +54,6 @@ debug.log
 **/.vs
 **/obj
 **/bin
+
+**/android
+**/ios

@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  mop.api:
+    image: mopro.azurecr.io/meetingsorganizerpro:latest
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - 8080:80
+    depends_on:
+      - sql.data
+  sql.data:
+    image: "microsoft/mssql-server-linux"
+    environment:
+      SA_PASSWORD: "Pass@word"
+      ACCEPT_EULA: "Y"

@@ -3,17 +3,55 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29411.108
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MOP.API", "MOP.API\MOP.API.csproj", "{1870E2DE-1FC9-434A-92CC-B2CD12F5EC10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MOP.API", "src\MOP.API\MOP.API.csproj", "{1870E2DE-1FC9-434A-92CC-B2CD12F5EC10}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{1C12AA79-F96D-4DFD-8865-187BF2B6432C}"
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "src\docker-compose.dcproj", "{1C12AA79-F96D-4DFD-8865-187BF2B6432C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MOP.Services", "MOP.Services\MOP.Services.csproj", "{1F899519-D17D-4D58-A168-E0ACFD81A060}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MOP.Services", "src\MOP.Services\MOP.Services.csproj", "{1F899519-D17D-4D58-A168-E0ACFD81A060}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MOP.DAL", "MOP.DAL\MOP.DAL.csproj", "{039E9976-1A4C-45B5-AE55-45354C12AE6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MOP.DAL", "src\MOP.DAL\MOP.DAL.csproj", "{039E9976-1A4C-45B5-AE55-45354C12AE6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MOP.Resolver", "MOP.Resolver\MOP.Resolver.csproj", "{52528421-507B-4440-96ED-470845FA40FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MOP.Resolver", "src\MOP.Resolver\MOP.Resolver.csproj", "{52528421-507B-4440-96ED-470845FA40FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MOP.Abstract", "MOP.Abstract\MOP.Abstract.csproj", "{F88E9B4F-22B6-4181-A977-89F04D7E38E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MOP.Abstract", "src\MOP.Abstract\MOP.Abstract.csproj", "{F88E9B4F-22B6-4181-A977-89F04D7E38E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{791C7AFA-F17F-4578-8E7B-B0041FB0B413}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F7B601D1-148B-4477-A3E8-9FFC2B50FC0D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MOP.Testing", "tests\MOP.Testing\MOP.Testing.csproj", "{05921E38-8CFC-4127-A19F-8AA8699C44BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "client-apps", "client-apps", "{4DC22E78-145B-4606-A4BF-A5C7500963AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MOP.Client.RN", "MOP.Client.RN", "{1E51998C-8C61-4601-9F1A-A75160D96A09}"
+	ProjectSection(SolutionItems) = preProject
+		client-apps\MOP.Client.RN\.gitignore = client-apps\MOP.Client.RN\.gitignore
+		client-apps\MOP.Client.RN\app.json = client-apps\MOP.Client.RN\app.json
+		client-apps\MOP.Client.RN\App.tsx = client-apps\MOP.Client.RN\App.tsx
+		client-apps\MOP.Client.RN\babel.config.js = client-apps\MOP.Client.RN\babel.config.js
+		client-apps\MOP.Client.RN\package-lock.json = client-apps\MOP.Client.RN\package-lock.json
+		client-apps\MOP.Client.RN\package.json = client-apps\MOP.Client.RN\package.json
+		client-apps\MOP.Client.RN\tsconfig.json = client-apps\MOP.Client.RN\tsconfig.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".expo", ".expo", "{515C1B76-5245-42AE-8FC7-9C54BCB7D710}"
+	ProjectSection(SolutionItems) = preProject
+		client-apps\MOP.Client.RN\.expo\packager-info.json = client-apps\MOP.Client.RN\.expo\packager-info.json
+		client-apps\MOP.Client.RN\.expo\settings.json = client-apps\MOP.Client.RN\.expo\settings.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "web", "web", "{7F2485B8-B773-4474-8990-D3C8DA83D372}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".expo-shared", ".expo-shared", "{C261F7C4-604C-4E22-8096-05A8C0FDB210}"
+	ProjectSection(SolutionItems) = preProject
+		client-apps\MOP.Client.RN\.expo-shared\assets.json = client-apps\MOP.Client.RN\.expo-shared\assets.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{34196417-3F2F-42A5-A998-F9BF05F3D3BC}"
+	ProjectSection(SolutionItems) = preProject
+		client-apps\MOP.Client.RN\assets\icon.png = client-apps\MOP.Client.RN\assets\icon.png
+		client-apps\MOP.Client.RN\assets\splash.png = client-apps\MOP.Client.RN\assets\splash.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,9 +83,27 @@ Global
 		{F88E9B4F-22B6-4181-A977-89F04D7E38E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F88E9B4F-22B6-4181-A977-89F04D7E38E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F88E9B4F-22B6-4181-A977-89F04D7E38E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05921E38-8CFC-4127-A19F-8AA8699C44BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05921E38-8CFC-4127-A19F-8AA8699C44BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05921E38-8CFC-4127-A19F-8AA8699C44BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05921E38-8CFC-4127-A19F-8AA8699C44BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1870E2DE-1FC9-434A-92CC-B2CD12F5EC10} = {791C7AFA-F17F-4578-8E7B-B0041FB0B413}
+		{1C12AA79-F96D-4DFD-8865-187BF2B6432C} = {791C7AFA-F17F-4578-8E7B-B0041FB0B413}
+		{1F899519-D17D-4D58-A168-E0ACFD81A060} = {791C7AFA-F17F-4578-8E7B-B0041FB0B413}
+		{039E9976-1A4C-45B5-AE55-45354C12AE6B} = {791C7AFA-F17F-4578-8E7B-B0041FB0B413}
+		{52528421-507B-4440-96ED-470845FA40FA} = {791C7AFA-F17F-4578-8E7B-B0041FB0B413}
+		{F88E9B4F-22B6-4181-A977-89F04D7E38E6} = {791C7AFA-F17F-4578-8E7B-B0041FB0B413}
+		{05921E38-8CFC-4127-A19F-8AA8699C44BE} = {F7B601D1-148B-4477-A3E8-9FFC2B50FC0D}
+		{1E51998C-8C61-4601-9F1A-A75160D96A09} = {4DC22E78-145B-4606-A4BF-A5C7500963AB}
+		{515C1B76-5245-42AE-8FC7-9C54BCB7D710} = {1E51998C-8C61-4601-9F1A-A75160D96A09}
+		{7F2485B8-B773-4474-8990-D3C8DA83D372} = {515C1B76-5245-42AE-8FC7-9C54BCB7D710}
+		{C261F7C4-604C-4E22-8096-05A8C0FDB210} = {1E51998C-8C61-4601-9F1A-A75160D96A09}
+		{34196417-3F2F-42A5-A998-F9BF05F3D3BC} = {1E51998C-8C61-4601-9F1A-A75160D96A09}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A678084-A9C5-4856-8197-A65EB598A860}

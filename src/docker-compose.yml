@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  mop.api:
+    image: ${DOCKER_REGISTRY-}mopapi
+    build:
+      context: .
+      dockerfile: MOP.API/Dockerfile
+    depends_on:
+      - sql.data
+  sql.data:
+    image: microsoft/mssql-server-linux
